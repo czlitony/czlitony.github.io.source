@@ -69,4 +69,6 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repository: https://github.com/czlitony/czlitony.github.io.git
+  branch: master
