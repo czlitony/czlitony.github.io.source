@@ -5,16 +5,16 @@
 基于Linux
 
 ## Clone
+~~~
 git clone https://github.com/czlitony/czlitony.github.io.source.git
+~~~
 
-## 使用
-- 进入czlitony.github.io.source文件夹
-- 初始化git 
+##进入czlitony.github.io.source文件夹,依次执行
 ~~~
-git config --global user.email "your owne mail"
-git config --global user.name "your github user name"
-~~~
-- 安装工具
-~~~
+cd czlitony.github.io.source
+git clone https://github.com/iissnan/hexo-theme-next themes/next
 npm install
 ~~~
+
+## 使用
+
