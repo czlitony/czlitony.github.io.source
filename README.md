@@ -4,7 +4,7 @@
 
 基于Linux
 
-## clone
+## Clone
 git clone https://github.com/czlitony/czlitony.github.io.source.git
 
 ## 使用
