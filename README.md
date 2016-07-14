@@ -16,5 +16,10 @@ git clone https://github.com/iissnan/hexo-theme-next themes/next
 npm install
 ~~~
 
+> 可以复制下面的代码段，省去多次复制的麻烦
+~~~
+git clone https://github.com/czlitony/czlitony.github.io.source.git;cd czlitony.github.io.sourcegit clone https://github.com/iissnan/hexo-theme-next themes/next;npm install
+~~~
+
 ## 使用
 
