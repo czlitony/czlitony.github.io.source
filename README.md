@@ -9,9 +9,12 @@ git clone https://github.com/czlitony/czlitony.github.io.source.git
 
 ## 使用
 - 进入czlitony.github.io.source文件夹
-- 执行 
-    git config --global user.email "your owne mail"
-    git config --global user.name "your github user name"
-- 执行
-    npm install
-
+- 初始化git 
+~~~
+git config --global user.email "your owne mail"
+git config --global user.name "your github user name"
+~~~
+- 安装工具
+~~~
+npm install
+~~~
