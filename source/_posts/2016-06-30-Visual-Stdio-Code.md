@@ -6,6 +6,7 @@ tags : [visual stdio code, vsc]
 
 Some frequently used vsc keyboard shortcuts.
 
+<!-- more -->
 
 - shift+ctrl+A 注释代码块
 - ctrl+/       注释

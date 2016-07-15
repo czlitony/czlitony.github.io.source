@@ -6,6 +6,8 @@ tags : [Vmware]
 
 默认情况下，Vmware vSphere已禁用针对ESXESXi的复制和粘贴操作，以防止公开已复制到剪贴板中的敏感数据。其实可以通过设置启用它，具体操作如下：
 
+<!-- more -->
+
 
 1. 使用 vSphere Client 登录到 vCenter Server 系统并选择虚拟机，虚拟机要在关闭状态下。
 

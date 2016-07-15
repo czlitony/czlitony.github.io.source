@@ -8,6 +8,8 @@ tags : [digital signature, digital certificate]
 它用图片通俗易懂地解释了，"数字签名"（digital signature）和"数字证书"（digital certificate）到底是什么。
 我对这些问题的理解，一直是模模糊糊的，很多细节搞不清楚。读完这篇文章后，发现思路一下子就理清了。
 
+<!-- more -->
+
 ---
 
 原文网址：[http://www.youdzone.com/signature.html](http://www.youdzone.com/signature.html) <br />

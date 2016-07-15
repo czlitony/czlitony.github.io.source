@@ -6,6 +6,8 @@ tags : [SSL, VPN]
 
 SSL VPN是专栏VPN系列技术原理的最后一篇，SSL VPN作为远程接入型的VPN，已经具备非常广阔的前景，它的主要适应场景是取代L2TP Over IPSec，但功能要比L2TP Over IPSec更丰富，方案也更加灵活。
 
+<!-- more -->
+
 ## 一、SSL VPN简介
 
 何谓SSL VPN，首先要从SSL谈起，使用网络不能不提的是各个网站，浏览网站使用浏览器，网络上传送网页的协议叫HTTP，它是明文传播的，传播内容可以被黑客读取。而SSL全名叫Secure Session Layer（安全会话层），其最初目的是给HTTP加密使用的安全套件，使用SSL的HTTP，也就摇身一变成了HTTPS，端口也从HTTP的80变成了443。由于HTTPS具备安全性，也具备传输数据的能力，也就被研究VPN技术的专家盯上了，觉得HTTPS可以用于组建VPN方案，于是乎SSL VPN技术就呼之欲出了。经过多年的发展，SSL版本发展到了3.0，也被标准组织采纳为TLS（Transport Layer Security传输层安全） 1.0之中，所以SSL VPN也叫TLS VPN。下面是SSL 与SSL VPN、TLS的区别：

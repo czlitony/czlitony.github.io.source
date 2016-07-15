@@ -6,6 +6,8 @@ tags : [markdown]
 
 Cmd Markdown是一种markdown文本编辑工具，这篇文章对该工具进行了相关的介绍。
 
+<!-- more -->
+
 # 欢迎使用 Cmd Markdown 编辑阅读器
 ------
 
