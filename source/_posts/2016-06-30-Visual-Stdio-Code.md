@@ -1,5 +1,5 @@
 ---
-title: VSC keyboard shortcuts
+title: VSC Keyboard Shortcuts
 categories : tools
 tags : [visual stdio code, vsc]
 ---
