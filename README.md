@@ -13,6 +13,7 @@ git clone https://github.com/czlitony/czlitony.github.io.source.git
 ~~~
 cd czlitony.github.io.source
 git clone https://github.com/czlitony/hexo-theme-next themes/next
+npm install hexo-generator-search --save
 npm install
 ~~~
 
