@@ -54,24 +54,24 @@ public class MaxMinMedium {
     private static ArrayList<Integer> valueList = new ArrayList<Integer>();
 
     //reset sum and valueList
-    public static int reset() {
+    public static boolean reset() {
         valueList.clear();
-        return 1;
+        return true;
     }
 
-    public static int calc() {
+    public static boolean calc() {
         if(valueList.size() > 0) {
             Collections.sort(valueList);
-            return 1;
+            return true;
         } else {
-            return 0;
+            return false;
         }
     }
 
-    public static int insert(int val) {
+    public static boolean insert(int val) {
         valueList.add(val);
 
-        return 1;
+        return true;
     }
 
     public static int getMax() {
