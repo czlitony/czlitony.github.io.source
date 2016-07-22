@@ -113,10 +113,8 @@ public class PersonalBookmarks {
         } catch (SQLException e) {
             System.out.println ("MySQL operation mistake");
             e.printStackTrace();
-            isSuccessful = false;
         } catch (Exception e) {
             e.printStackTrace();
-            isSuccessful = false;
         } finally {
             conn.close();
         }
