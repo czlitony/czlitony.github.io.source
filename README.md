@@ -24,13 +24,20 @@ git clone https://github.com/czlitony/hexo-theme-next themes/next;
 npm install
 ~~~
 
-**注意:** 当修改了next主题文件之后，要同步到github上面。具体操作为：
-~~~
+## 保存修改
+修改了博客源文件之后要提交修改：
+```
+git add -A
+git commit -m "modify"
+git push origin master
+```
+
+修改了next主题文件之后也要提交修改：
+```
 cd theme/next
 git add .
 git commit -m "modify the theme"
 git push origin master
-~~~
+```
 
-## 使用
 
