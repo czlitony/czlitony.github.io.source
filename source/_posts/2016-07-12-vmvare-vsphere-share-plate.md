@@ -2,6 +2,7 @@
 title: Vmware vSphere虚拟机与主机共享剪贴板  
 categories : other
 tags : [Vmware]
+date : 2016-07-12 11:38:30
 ---
 
 默认情况下，Vmware vSphere已禁用针对ESXESXi的复制和粘贴操作，以防止公开已复制到剪贴板中的敏感数据。其实可以通过设置启用它，具体操作如下：

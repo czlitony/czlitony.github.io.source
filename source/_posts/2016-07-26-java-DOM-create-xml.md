@@ -2,6 +2,7 @@
 title: Java DOM生成xml文件
 categories : java
 tags : [XML， DOM]
+date : 2016-07-26 9:38:30
 ---
 
 我们不仅可以使用DOM的方式解析XML文件，同时也可以使用DOM的方式生成XML文件。本文主要内容是使用DOM的方式生成XML文件。

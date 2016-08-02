@@ -2,6 +2,7 @@
 title: 技术点详解---SSL VPN
 categories : [network]
 tags : [SSL, VPN]
+date : 2016-07-06 9:38:30
 ---
 
 SSL VPN是专栏VPN系列技术原理的最后一篇，SSL VPN作为远程接入型的VPN，已经具备非常广阔的前景，它的主要适应场景是取代L2TP Over IPSec，但功能要比L2TP Over IPSec更丰富，方案也更加灵活。

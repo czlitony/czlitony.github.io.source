@@ -2,6 +2,7 @@
 title: xslt调用java类方法
 categories : xslt
 tags : [xml,xsl,xslt,xpath]
+date : 2016-07-21 9:38:30
 ---
 
 xslt中可以调用java的类方法，对这种引用了java方法的xslt的解析可以采用java JDK自带的 javax.xml.transform.本文对这种方法进行介绍。

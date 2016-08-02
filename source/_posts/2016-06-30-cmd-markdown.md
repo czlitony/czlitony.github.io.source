@@ -2,6 +2,7 @@
 title: Cmd Markdown
 categories : [markdown]
 tags : [markdown]
+date : 2016-06-30 9:38:30
 ---
 
 Cmd Markdown是一种markdown文本编辑工具，这篇文章对该工具进行了相关的介绍。

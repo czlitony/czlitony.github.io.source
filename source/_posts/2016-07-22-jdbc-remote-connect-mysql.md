@@ -2,6 +2,7 @@
 title: JDBC远程连接MySql
 categories : java
 tags : [JDBC， MySql]
+date : 2016-07-22 9:38:30
 ---
 
 本文主要内容是开启MySql数据库的远程连接功能，然后远程通过JDBC来连接上数据库，进行简单的查询操作。

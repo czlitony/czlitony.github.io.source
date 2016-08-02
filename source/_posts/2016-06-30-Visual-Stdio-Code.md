@@ -2,6 +2,7 @@
 title: VSC Keyboard Shortcuts
 categories : tools
 tags : [visual stdio code, vsc]
+date : 2016-06-30 10:38:30
 ---
 
 Some frequently used vsc keyboard shortcuts.
