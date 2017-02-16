@@ -33,6 +33,7 @@ svn diff -r 3 text.c   #比较你的本地代码和版本号为3的text.c文件�
 svn diff -r 5:6        #比较版本5和版本6之间所有文件的不同。
 svn diff -r 5:6 text.c #比较版本5和版本6之间的text.c文件的变化。
 svn diff -c 6 test.c    #比较版本5和版本6之间的text.c文件的变化。
+svn diff file --diff-cmd=meld  # 用meld工具查看变化。
 ```
 **log示例**：
 ```
@@ -50,7 +51,7 @@ svn log http://foo.com/svn/trunk/code/  #显示代码目录的日志信息。
 svn add file|dir -- 添加文件或整个目录
 svn checkout -- 获取svn代码
 svn commit  -- 提交本地修改代码
-svn status    -- 查看本地修改代码情况：修改的或本地独有的文件详细信息
+svn status    -- 查看本地修改代码情况：修改的或本地独有的文件详细信息(svn st -q)
 svn merge   -- 合并svn和本地代码
 svn revert   -- 撤销本地修改代码
 svn resolve -- 合并冲突代码
