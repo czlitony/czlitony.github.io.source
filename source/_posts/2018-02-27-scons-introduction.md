@@ -153,3 +153,52 @@ def Environment(**kw):
     
 ```
 # Emitter
+A function or list of functions to manipulate the target and source lists before dependencies are established and the target(s) are actually built.
+Example:
+```
+import os
+env = Environment()
+
+def Output_Emitter(target, source, env):
+    out_targets = []
+    for t in target:
+        out_target = File(os.path.join('out', str(t)))
+        out_targets.append(out_target)
+
+    return out_targets, source
+
+env['LIBEMITTER'] = Output_Emitter
+
+env.StaticLibrary('hello', 'hello.cpp')
+```
+Jabber uses Emitter to control the build output directory.
+/Users/chengzhI/jabber/trunk/tools/scripts/build/csfenv.py
+```
+DEFAULT_TOOLS = [
+    'libraries',
+    'platforms',
+    'emitters',
+    'builddir',
+    csftest.tool,
+    output.tool,
+    preCommit.tool,
+    iniInstallAndAppend.tool,
+    reflection.tool
+]
+```
+/Users/chengzhI/jabber/trunk/tools/scripts/build/builddir.py
+```
+DEFAULT_LOCATION = {
+    'bin': 'bin',
+    'staticlib': 'bin',
+    'staticservicelib': 'bin',
+    'sharedlib': 'bin',
+    'sharedservicelib': 'bin',
+    'obj-static': 'obj-static',
+    'obj-shared': 'obj-shared'
+}
+
+def generate(env, **kwargs):
+    ...
+    Setup_Emitters(env)
+```
