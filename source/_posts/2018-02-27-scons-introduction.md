@@ -179,11 +179,13 @@ builder = builderEnv.Command(targets, sources, builderMethod)
 ## Tool
 The Tool form of the function returns a callable object that can be used to initialize a construction environment using the tools keyword of the Environment() method.
 [SCONS ToolsIndex](https://bitbucket.org/scons/scons/wiki/ToolsIndex)
+
 Tools in Jabber:
 ```
 env.Tool(shoggoth.tool)
 env.Tool(msvcgen.tool)
 ```
+
 /Users/chengzhI/jabber/trunk/tools/scripts/build/csfenv.py:
 ```
 DEFAULT_TOOLS = [
@@ -225,42 +227,12 @@ env['LIBEMITTER'] = Output_Emitter
 
 env.StaticLibrary('hello', 'hello.cpp')
 ```
-Jabber uses Emitter to control the build output directory.
-/Users/chengzhI/jabber/trunk/tools/scripts/build/csfenv.py
-```
-DEFAULT_TOOLS = [
-    'libraries',
-    'platforms',
-    'emitters',
-    'builddir',
-    csftest.tool,
-    output.tool,
-    preCommit.tool,
-    iniInstallAndAppend.tool,
-    reflection.tool
-]
-```
-/Users/chengzhI/jabber/trunk/tools/scripts/build/builddir.py
-```
-DEFAULT_LOCATION = {
-    'bin': 'bin',
-    'staticlib': 'bin',
-    'staticservicelib': 'bin',
-    'sharedlib': 'bin',
-    'sharedservicelib': 'bin',
-    'obj-static': 'obj-static',
-    'obj-shared': 'obj-shared'
-}
+Jabber uses Emitter to control the build output directory: tools/scripts/build/csfenv.py
 
-def generate(env, **kwargs):
-    ...
-    Setup_Emitters(env)
-```
 ## PCH
-Builds a Microsoft Visual C++ precompiled header. Calling this builder method returns a list of two targets: the PCH as the first element, and the object file as the second element. Normally the object file is ignored. This builder method is only provided when Microsoft Visual C++ is being used as the compiler. The PCH builder method is generally used in conjunction with the PCH construction variable to force object files to use the precompiled header:
-```
-env['PCH'] = env.PCH('StdAfx.cpp')[0]
-```
+[Microsoft Pre-compiled headers technology](https://blog.csdn.net/luoweifu/article/details/49010627)
+Builds a Microsoft Visual C++ precompiled header. Calling this builder method returns a list of two targets: the PCH as the first element, and the object file as the second element. Normally the object file is ignored. This builder method is only provided when Microsoft Visual C++ is being used as the compiler. The PCH builder method is generally used in conjunction with the PCH construction variable to force object files to use the precompiled header.
+The useage of PCH in Jabber can refer to tools/scripts/build/csfenv.py.
 
 # Jabber build system introduction
 ## shoggoth
